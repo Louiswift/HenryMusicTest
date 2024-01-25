@@ -152,7 +152,6 @@ async function setSongInfo(songId) {
 
     // 获取歌曲信息
     await getSongDetails(songId).then(song => {
-        console.log(song)
         pic.src = song.songs[0].al.picUrl;
         songName.innerText = song.songs[0].name;
         title.innerText = song.songs[0].name;
